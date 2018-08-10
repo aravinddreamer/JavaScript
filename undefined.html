@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Falsy Statement</title>
+	<style type="text/css">
+		h1{
+			position: fixed;
+			left:45%;
+		}
+	</style>
+</head>
+<body>
+<h1>Falsy Statements</h1>
+<h3>Falsy statements are the one which return false when evaluated using boolean.</h3>
+<h3>Truthy statements are the vice versa</h3>
+<script type = "text/javascript">
+	var newline = "<br><br>"
+	//declaring a variable with value as null 
+	var txt = null;
+	document.write("<h3>var txt = null;</h3>")
+	document.write("Type of txt : ",typeof(txt),newline);
+	document.write("Displaying txt : ",txt,newline);
+	document.write("Boolean(txt) : ",Boolean(txt),newline);
+
+	//declaring a variable and not defining a value
+	var val;
+	document.write("<h3>var val;</h3>")
+	document.write("Type of val : ",typeof(val),newline);
+	document.write("Displaying val : ",val,newline);
+	document.write("Boolean(val) : ",Boolean(val),newline);
+
+	//checking for equality
+	document.write("Checking the equality using  ===  : ",val === txt,newline)
+	document.write("checking the equality using  ==   : ",val == txt,newline)
+	document.write("Data Type of null and undefined are different but values remains same.")
+
+	//returing of boolean
+
+	document.write("<h3>Boolean()</h3>")
+	document.write("<h3>Boolean value of Nulls returns false</h3>");
+	document.write("Boolean(null)        :>>  ",Boolean(null),newline)
+	document.write("<h3>Boolean values of undefined also returns false</h3>");
+	document.write("Boolean(undefined)   :>>  ",Boolean(undefined),newline)
+	document.write("<h3>Boolean value of false is False</h3>");
+	document.write("Boolean(false)       :>>  ",Boolean(false),newline)
+	document.write("<h3>Boolean value of true is True</h3>");
+	document.write("Boolean(true)        :>>  ",Boolean(true),newline)
+	document.write("<h3>Boolean value of false as a string is True because it is considered as string</h3>");
+	document.write("Boolean('false') 	 :>>  ",Boolean("false"),newline)
+	document.write("<h3>Boolean value of true as a string is True</h3>");
+	document.write("Boolean('true') 	 :>>  ",Boolean("true"),newline)
+	document.write("<h3>Boolean value of quotes without space is False.</h3>");
+	document.write("Boolean('') 		 :>>  ",Boolean(""),newline)
+	document.write("<h3>Boolean value os quotes with space is True.</h3>");
+	document.write("Boolean(' ') 		 :>>  ",Boolean("  "),newline)
+	document.write("<h3>Boolean value Not a Numbre is also false</h3>");
+	document.write("Boolean(NaN) 		 :>>  ",Boolean(NaN),newline)
+	document.write("<h3>Bolean value of Empty array is True.</h3>");
+	document.write("Boolean([]) 		 :>>  ",Boolean([]),newline)
+	document.write("<h3>Boolean value of empty object is True.</h3>");
+	document.write("Boolean({}) 		 :>>  ",Boolean({}),newline)
+	document.write("<h3>Boolean value 0 is False</h3>");
+	document.write("Boolean(0) 		 	 :>>  ",Boolean(0),newline)
+	document.write("<h3>Boolean value 1 is True</h3>");
+	document.write("Boolean(1) 		 	 :>>  ",Boolean(1),newline)
+	document.write("<h3>Boolean value 1.22s is True</h3>");
+	document.write("Boolean(1.22) 		 	 :>>  ",Boolean(1.22),newline)
+	document.write("<h3>if(null == 'null') is  false.</h3>");
+	document.write("null == 'null' 		 :>>  ",null == 'null',newline)
+	document.write("<h3>if(true == 'true') is  false.</h3>");
+	document.write("true == 'true' 		 :>>  ",true == 'true',newline)
+	document.write("<h3>if(false == 'false') is  false.</h3>");
+	document.write("false == 'false' 		 :>>  ",false == 'false',newline)
+	document.write("<h3>if(false == false) is  True.</h3>");
+	document.write("false == false 		 :>>  ",false == false,newline)
+	document.write("<h3>if(true == '1') is  True.</h3>");
+	document.write("true == '1' 		 :>>  ",true == '1',newline)
+	document.write("<h3>if(false == '0') is  True.</h3>");
+	document.write("false == '0' 		 :>>  ",false == '0',newline)
+</script>
+</body>
+</html>

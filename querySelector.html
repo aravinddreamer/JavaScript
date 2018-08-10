@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Css Query Selector</title>
+	<script type="text/javascript" src=querySelector.js></script>
+	<style type="text/css">
+		button{font-style: initial;font-size: 20px;}
+		.selector{background-color:#fedcab;}
+		.selectorAll{background-color:lightgreen}
+	</style>
+</head>
+<body id="body">
+	<div class="selector">
+	<h1>Query Selector</h1>
+
+		<pre>
+			class="content" This content is about Query selector.
+			class="content" The values can be selected using tagName,classname,Id.
+		</pre>
+
+		<pre>Both tags has same class name.
+			Using Queryselector -> class name returns only first match.
+		</pre>
+
+		<h2 class="content">This content is about Query selector.</h2>
+		<p class="content">The values can be selected using tagName,classname,Id.</p>
+
+		<h4>Next way getting data from HTML element is by querySelector.</h4>
+		<h3>Query Selector return the first HTML element based on the given query</h3>
+
+		<button onclick="myQuerySelector()">Click to see the change using Query Selector</button>
+
+	</div>
+	<hr>
+	<div class="selectorAll">
+
+		<h1>Query Selector All</h1>
+
+		<pre>
+			class="queryall" This content is about Query selector all.
+			class="queryall" Query selector all returns all HTML elements as an array.
+			class="queryall" which matches the given constrain.
+		</pre>
+
+		<pre>All three tags has same class name.
+			Using Queryselector --> class name returns only all the  matches as an array.
+		</pre>
+
+		<h2 class="queryAll">This content is about Query selector all.</h2>
+		<p class="queryAll">Query selector all returns all HTML elements as an array.</p>
+		<p class="queryAll">which matches the given constrain.</p>
+
+		<button onclick="myQuerySelectorAll()">Click see the change. using Query Selector</button>
+	</div>
+</body>
+</html>

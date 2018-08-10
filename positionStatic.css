@@ -1,0 +1,17 @@
+.p1{
+	position: static;
+	top:-250px;
+    border:4px solid lightgreen;
+    background-color:lightgreen;
+}
+.p2{
+	position:static;
+	left:250px;
+    border:4px solid #abcdef;
+    background-color:#abcdef;
+}
+.p3{
+	position: static;
+	border:4px solid #fedcab;
+    background-color:#fedcab;
+}

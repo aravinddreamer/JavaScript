@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Table</title>
+	<script type="text/javascript" src="tablescript.js"></script>
+	<script type="text/javascript" src='cookiescript.js'></script>
+	<link rel="stylesheet" href="tablestyle.css">
+</head>
+<body>
+	<fieldset class='insert'>
+	<h1>Contact Application </h1><hr/>
+	<form>
+			<label>Enter the User Name   :</label>
+			<input id='name' type="text" required /><br/><br/>
+			<label>Enter the Number :   </label>
+			<input id='number' type="text" title="Length is 10" required/><br><br/>
+			<input type="submit" onclick='validate()' title="Click to delete numbers." value='INSERT'/>
+		</form>
+	</fieldset >
+	<fieldset class='search'>
+		<h2>Search Contact</h2>
+		BY <input type="radio" onclick="if(this.checked){showSearchNameDiv()}" name='searchtype' /> NAME
+		   <input type="radio" onclick="if(this.checked){showSearchNumberDiv()}" name='searchtype'/> NUMBER<br><br><br><br>
+		   <div id='nameDiv'>
+		   	<hr>
+		   	<label>Enter user Name to Search :</label>
+		   	<input oninput="searchNum()" id='searchByName' type='text' />
+		   </div>
+		   <div id='numberDiv'>
+		   	<hr>
+		   	<label>Enter Number to Search :</label>
+		   	<input oninput="searchName()" id='searchByNumber' type='text' />
+		   </div>
+	</fieldset>
+	<fieldset class='delete'>
+		<h2>Delete Contact</h2>
+		<label>By User Name :</label><br/>
+		<input id='numberDel' type="text" title="Length is 10" required/><br><br/>
+		<input type="button"  onclick='deleteNumber()' title="Click to delete numbers." value='DELETE'></input>
+	</fieldset>
+	<fieldset class='displayall'>
+		<h2>Display All</h2>
+		<input type="button"  onclick='deleteNumber()' title="Click to delete numbers." value='Click to see...'></input>
+	</fieldset>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Storage</title>
+	<link rel="stylesheet" type="text/css" href="storage.css">
+</head>
+<body id="body">
+<h1>Storage</h1>
+<pre>
+	Information can be stored in stored in web browser in different ways.
+<ol type="I"><li>Local storage</li><li>Session storage</li><li>Cookies</li></ol>
+<h3>Local Storage :</h3>
+	Local is that information are stores in local browser itself.
+	It is not deleted until cleared or explicitly deleted.
+	It's size is greater than that of cookie 5MB.
+	It is stored in the client side.
+	It reduces the traffic between the client and server.
+	<h4>It works on the same-origin policy that is only on the same page.</h4>
+
+	It stores as key and value pair.
+	It can be read,modified and deleted.
+	<b>Ex:</b><h4>
+	key-value pair stored in google.co.in 
+	will not be available google.co.in/mail.
+	But if you open same page in different tabs it will be present.</h4>
+
+	<h4>localStorage.setItem(key,value)</h4>
+		It is used to create key value pair at local storage.
+		<b>Ex:</b>
+		localStorage.setItem("userName","ARAVIND")
+
+	<h4>localStorage.getItem(key)</h4>
+		It is used to get key value from the local storage.
+		<b>Ex:</b>
+		localStorage.getItem("userName")
+
+	<h4>localStorage.removeItem(key)</h4>
+		It is used to remove  key value pair at local storage with the given key.
+		<b>Ex:</b>
+		localStorage.removeItem("userName")
+
+	<h4>localStorage.clear()</h4>
+		It is used to clear all key value pair at local storage.
+		<b>Ex:</b>
+		localStorage.clear()
+
+	<h4>localStorage.key(value)</h4>
+		It returns the key value of the given element if not present it returns null value.
+		<b>Ex:</b>
+		localStorage.key("ARAVIND")
+
+	<h4>localStorage.valueOf(key)</h4>
+		It returns the key-value of the given element as a object if not present it returns null value.
+		<b>Ex:</b>
+		localStorage.valueOf("userName")
+	<img src="img/local.png">
+		
+<h3>Session Storage :</h3>
+	<h4>It is same as local storage.
+		But only one small difference.
+		Only on that tab .Even same webpage on other tab it will not be present.
+		When the tab is closed it will be deleted.
+	</h4>	
+	<h4>sessionStorage.setItem(key,value)</h4>
+		It is used to create key value pair at local storage.
+		<b>Ex:</b>
+		sessionStorage.setItem("authKey","bSep23WDIX")
+
+	<h4>sessionStorage.getItem(key)</h4>
+		It is used to get key value from the local storage.
+		<b>Ex:</b>
+		sessionStorage.getItem("authKey")
+
+	<h4>sessionStorage.removeItem(key)</h4>
+		It is used to remove  key value pair at local storage with the given key.
+		<b>Ex:</b>
+		sessionStorage.removeItem("authKey")
+
+	<h4>sessionStorage.clear()</h4>
+		It is used to clear all key value pair at local storage.
+		<b>Ex:</b>
+		sessionStorage.clear()
+
+	<h4>sessionStorage.key(value)</h4>
+		It returns the key value of the given element if not present it returns null value.
+		<b>Ex:</b>
+		sessionStorage.key("bSEP23WDIX")
+
+	<h4>sessionStorage.valueOf(key)</h4>
+		It returns the key-value of the given element as a object if not present it returns null value.
+		<b>Ex:</b>
+		sessionStorage.valueOf("authKey")
+	<img src="img/session.png">
+<h3>Cookies</h3>
+	It is a small text document stores in the directory of the browser.
+	It holds small space for holding information.
+	It communicates with the server for every request.
+	It can be set with expiry time when should be the cookie deleted.
+	It is also key-value pair.
+	It set using document.cookie="key=value;expiry".
+	It is the convinenet way of carrying information from one session to the another.
+
+	Mostly Cookies are for Server side reading and local storage, session storage are for client side reading as it rarely communicates with the server.
+</pre>
+</body>
+</html>

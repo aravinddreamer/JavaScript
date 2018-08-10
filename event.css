@@ -1,0 +1,30 @@
+pre{
+		font-family: "Arial";
+		font-size: 18px;
+		margin-left: 20px;
+	}
+#stopOuter,#capturingOuter,#bubbleOuter{
+		margin-top: 25px;
+		position: relative;
+		left:30%;
+		box-sizing: border-box;
+		background-color: lightgreen;
+		padding:75px;
+		width:300px;
+		height:300px;
+	}
+#stopInner,#capturingInner,#bubbleInner{
+		box-sizing: border-box;
+		background-color: brown;
+		padding-top:60px;
+		padding-left: 10px;
+		padding-right: 10px;
+		width: 150px;
+		height:150px;
+	}
+img{
+		margin-left: 25%;
+	}
+	h3{
+		display: inline;
+	}

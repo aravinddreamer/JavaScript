@@ -1,0 +1,28 @@
+
+pre{
+	font-family: cursive;
+	font-size: 25px;
+}
+h3,pre .in{
+	display: inline;
+}
+h1,h3{
+	color: red;
+}
+body{
+	margin-left:50px;
+	background-color: black;
+	color:white;
+}
+::-webkit-scrollbar{
+	display: block;
+}
+::-webkit-scrolllbar-track{
+	background-color: brown;
+}
+::-webkit-scrollbar-thumb{
+	background-color: powderblue;
+}
+::-webkit-scrollbar-thumb:hover{
+	background-color: black;
+}

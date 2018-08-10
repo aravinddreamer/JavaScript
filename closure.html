@@ -1,0 +1,72 @@
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<title>Closure</title>
+		<script type="text/javascript" src="closure.js"></script>
+		<style type="text/css">
+			h3{
+				display: inline;
+			}
+		</style>
+	</head>
+	<body>
+	<h1>Closure</h1>
+	<h3>
+	<p>Closure is mostly about the scope of the variable or an object.
+		For Example: Function inside a Function.
+	</p>
+	<p>
+		Inner function can access the variables of the outer function above it.
+		The variable declared the function is called as global variable.
+	</p>
+	<p>
+		When there are two variable inside the program.
+		One outside the function block and another inside it.
+	</p>
+	<p>
+		Inner variable has more priority than that of outer variable.
+		During, two values value of inner is used.
+	</p>
+</h3>
+	<pre>
+		<h2> Program Source : </h2>
+	function myFunction(){
+		<h3>var val=10;</h3>
+		function displayValue(){
+			<h3>var val=15;</h3>
+			function display(){
+				document.getElementById('innerdisplay').innerHTML="< h2>Inner value : " + val + "</ h2>";
+			}
+			display();
+		}
+		displayValue();
+		document.getElementById('outerdisplay').innerHTML="< h2>Outer value : " + val+ "< /h2>";
+	}
+	</pre>
+	<pre id="innerdisplay"></pre>
+	<pre id="outerdisplay"></pre>
+	<script type="text/javascript">myFunction()</script>
+
+	<pre>
+		<h2> Program Source : </h2>
+	function myFunction(){
+		<h3>var val = 10;</h3>
+		var txt = ""
+		function displayValue(){
+			<h3>var val = 15;</h3>
+			<h3>val += 5;</h3>
+			txt = txt + "< h2>Inner value : " + val+ "</ h2>";
+			}
+		<h3>val+=10;</h3>
+		displayValue();
+		displayValue();
+		document.getElementById('outerdisplay').innerHTML="< h2>Inner value : " + txt + "</ h2>";
+		document.getElementById('outerdisplay').innerHTML="< h2>Outer value : " + val + "</ h2>";
+	}
+	</pre>
+	<pre id="inndisplay"></pre>
+	<pre id="outdisplay"></pre>
+	<script type="text/javascript">scopeVariable()</script>
+
+	</body>
+	</html>

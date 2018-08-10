@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" href="../img/favicon.png">
+	<title>Time Events</title>
+	<script type="text/javascript">
+		//clear interval is used to clear the setTimeOut function
+	/*	function clearTimeInterval(){
+			clearTimeout(myVar);
+			myVar = setTimeout(myFunction, 5000);
+		}*/
+	</script>
+</head>
+<body>
+<h1>TIME  AND EVENTS</h1>
+<form>
+	User Name : <input id='userName' placeholder='Enter userName'><br><br>
+	Pass Code  : <input id='passCode' placeholder='Enter passCode'><br><br>
+	<button onsubmit="validate()">SUBMIT</button>
+</form>
+<label id=clk></label>
+<script type="text/javascript">
+
+//Time out  is executed way that after then given time function would be executed
+/*var myVar = setTimeout(myFunction, 5000);
+function myFunction() {
+    alert('Session Timed Out');
+    window.location=self.location.href;
+}*/
+//repeats the function at every interval of time
+var myclock=setInterval(displayclock,1000)
+function displayclock(){
+	var time=new Date();
+	document.getElementById("clk").innerHTML=time.toLocaleTimeString();
+}
+</script>
+</body>
+</html>

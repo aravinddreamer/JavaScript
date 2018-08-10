@@ -1,0 +1,96 @@
+h1{							/*using Tag name*/
+	font-size: 14px;
+	text-align: center;
+	color: red;
+
+}
+
+.intro{						/*Using class Name*/
+	font-size: 20px;
+	font-style: italic;
+}
+
+#content{					/*Using ID name*/
+	font-size: 20px;
+	font-family: sans-serif;
+}
+
+h1::after{			/*It adds content after all h1 tags*/
+	content: '- Heading';
+	color: #acdefb;	
+}
+
+.intro::before{		/*It adds Content before intro calss*/
+	content: "Intro-";
+}
+
+input:required { 			/* :required is used for required property in input tags to highlight.*/
+    border-color: red;
+    background-color: yellow;
+}
+
+input:out-of-range{		/*If number field is out of range it turns into red*/
+	border:2px solid red;
+}
+
+div input:valid{		/*It changes into green if input type matched the valid case */
+	border-color: lightgreen;
+	background-color: lightgreen;
+}
+
+p:first-child{		/*It changes first child of p as purple color*/
+	color:purple;
+}
+
+p:last-child{		/*It changes last child of p as purple color of each block*/
+	color:powderblue;
+}
+
+.empty:empty{
+	width: 10px;
+	height: 10px;
+	background : yellow;
+}
+
+input[type='number']{
+	box-sizing: 95px;
+}
+
+input:disabled{
+	background-color: #abcdef;
+}
+
+#citizen:read-only{
+	background:#aaafaf;
+}
+
+.lap input:checked{
+	width: 18px;
+	height: 18px;
+	color: red;
+
+}
+
+p:nth-child(2){				/*It is used to get nth first child from its parent*/
+	background-color: yellow;
+}
+
+p:nth-last-child(3){				/*It is used to get nth last child from its parent*/
+	background-color: #6543;
+}
+
+button{
+	/*background-color: #66ff33;
+	*/border: hidden;
+	font-size: 18px;
+}
+
+p:only-child{
+	color: #123456;
+}
+a:hover{
+	background-color: pink;
+}
+.footer{
+	font-size:20px;
+}

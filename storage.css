@@ -1,0 +1,37 @@
+
+h1{	color:red;
+}
+
+h3,h4{
+	display: inline;
+	color:#fedcab;
+}
+pre{
+	font-size:20px;
+	display: inline;
+	font-family: cursive;
+}
+img{
+	margin:25px 50px 10px 50px;
+}
+body{
+	background-color: black;
+	color:white;
+	border: 5px solid gray;
+	margin:5px 10px 5px 5px;
+	padding-left:20%;
+	padding-bottom:20%;
+	padding-right:5px;
+}
+::-webkit-scrollbar{
+	display: block;
+}
+::-webkit-scrolllbar-track{
+	background-color: brown;
+}
+::-webkit-scrollbar-thumb{
+	background-color: powderblue;
+}
+::-webkit-scrollbar-thumb:hover{
+	background-color: black;
+}

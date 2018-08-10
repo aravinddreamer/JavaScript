@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bubble Probacation.</title>
+	<link rel="stylesheet" type="text/css" href="event.css">
+</head>
+<body>
+	<h1>Event</h1>
+	<pre>
+		Event is the act of perfoming.
+		There are different way of flow of event.
+		I.Bubbling
+		II.Capturing
+		III.Target
+	</pre>
+	Event's bubble,capture occur in nested blocks.
+	so that clicking of inner/outer division produces different actions.
+<h2>Event Bubbling</h2>
+	<pre>
+		Event bubbling occurs when class is triggred.
+		It works in a way that from the current element to the outermost parent node.
+		
+	<img src="img/bubble.png" alt="picture bubble">
+
+		If an event Ex:onclick of button ocurrs it triggers all parent nodes.
+		From button --> div --> div
+		This process of flow can be modified by using stop.propagation
+	
+		In the above displayed code.There is outer divsion,inner Division and at the depth is the button.
+		All nodes are nested one inside the another.
+		Script is written at the bottom of the HTML.
+		Using query selector the nodes elements are obtained.
+		The last is the actionListener which performs actions when the event occurs in the respective node.
+	</pre>
+	<div id="bubbleOuter" >
+		<div id="bubbleInner" >
+			<button id="bubbleButt">Click me for bubbling event</button>
+		</div>
+	</div>
+<h2>Event Capturing</h2>
+	<pre>
+		Event Capturing occurs when class is triggred same as bubbling.
+		It works in a way that from current element to the inner most node.
+	<img style="margin-left: 20%" src="img/capturehtml.png" alt="picture capture">	
+	<img src="img/capturescript.png" alt="picture capture">
+
+		If an event Ex:onclick of inner division ocurrs it triggers all its child nodes.
+		From : div --> div --> button
+		This process of flow can be modified manually by using addActionlistoner with third parameter as true.
+	
+		In the above displayed code.There is outer divsion,inner Division and at the depth is the button.
+		All nodes are nested one inside the another.
+		Using query selector the nodes elements are obtained.
+		The last is the actionListener which performs actions when the event occurs in the respective node.
+	</pre>
+	<div id="capturingOuter" >
+		<div id="capturingInner" >
+			<button id="capturingButt">Click me for Capture event</button>
+		</div>
+	</div>
+<h2>Target Event</h2>
+	<pre>
+		Event target occurs and gives result of only the current element.
+		Only actioned element is processed remaining bubble and capture are stopped.
+		Ihis is done using <h3>event.stopPropagation</h3>.
+		Which stop remaining action even when it is nested.
+		
+	<img src="img/stopPropagation.png" alt="picture target">
+
+		If an event Ex:onclick of button .Only it's alert box is displayed.
+		This process of flow is be modified by using stop.propagation.
+	
+		In the above displayed code.There is outer divsion,inner Division and at the depth is the button.
+		All nodes are nested one inside the another.
+		Using query selector the nodes elements are obtained.
+		The last is the actionListener which performs actions when the event occurs in the respective node.
+	</pre>
+	<div id="stopOuter" onclick="event.stopPropagation()" >
+		<div id="stopInner" onclick="event.stopPropagation()">
+			<button id="stopButt" onclick="event.stopPropagation()">Click me for Target event</button>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="eventbubble.js"></script>
+</body>
+</html>

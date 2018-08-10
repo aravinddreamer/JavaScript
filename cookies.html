@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact App using Cookies</title>
+	<script type="text/javascript" src='cookie.js'></script>
+	</head>
+<body>
+	<h1>Contact App using Cookies</h1>
+	<div class='insert'>
+		<h3>Insert New Contact</h3>
+		<label>User Name</label>
+		<input id='name' type="text" placeholder="ABC" required /><br><br>
+		<label>Phone</label>
+		<input id='phno' type="number" placeholder="9876543210" required title='To Store value of Number Required'><br><br>
+		<button onclick='insertNum()'>Insert Contact</button><br>
+	</div>
+	<div class='search'>
+		<h3>Search Number By Name</h3>
+		<label>User Name</label>
+		<input oninput="searchNum()" id='searchName' type="text" placeholder="ABC" required /><br><br>
+		<pre id='searchResult'></pre><br>
+	</div>
+	<div class='delete'>
+		<h3>DELETE Number By Name</h3>
+		<label>User Name</label>
+		<input id='deleteName' type="text" placeholder="ABC" required /><br><br>
+		<button onclick='deleteNum()'>Delete Contact</button><br>
+	</div class='displayAll'>
+
+	<div>
+		<h3>ALL CONTACTS</h3>
+		<pre id='allResult'></pre><br>
+		<button onclick='displayAll()'>Click to Display all Contact</button><br>
+	</div>
+	<script type="text/javascript">
+		function insertNum(){
+			var PhName=document.getElementById('name').value;
+			var PhNumber=document.getElementById('phno').value;
+			if(setCookie(PhName,PhNumber,5)){
+				alert('Inserted Successfully')
+				window.location=self.location.href;
+			}
+			else
+				alert('Not Inserted')
+		}
+
+		function searchNum(){
+			var PhName=document.getElementById('searchName').value;
+			var res=getCookie(PhName);
+			if(res!=undefined)
+				document.getElementById('searchResult').innerHTML=res;
+		}
+		function deleteNum(){
+			var PhName=document.getElementById('deleteName').value;
+			if(confirm("Delete Contact : " + PhName)){
+				if(clearCookie(PhName)){
+					alert('Deleted Successfully.')
+					window.location=self.location.href;
+				}
+				else{
+					alert('Not found.')
+				}
+				
+			}
+		}
+		function displayAll(){
+			var res=getAllCookie();
+			if(res!=undefined)
+				document.getElementById('allResult').innerHTML=res;
+		}
+	</script>
+</body>
+</html>

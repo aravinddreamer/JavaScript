@@ -1,0 +1,15 @@
+.top{
+	position: relative;
+	height:100px;
+	background-color: #fedcab
+}
+.middle{
+	position: relative;
+	top: -90px;
+	height:100px;
+}
+.bottom{
+	position: relative;
+	height:100px;
+	background-color: #abcdef
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Document Object Model</title>
+	<link rel="stylesheet" type="text/css" href="document.css">
+	<script type="text/javascript" src="document.js"></script>
+</head>
+<body>
+<h1 style="text-align: center;">Document Object Model</h1>
+<pre>
+	Document object model is an cross-platform that is it can work on all different platforms.
+	The way of accessing or changing document  in window is document object model.
+	It treats HTML as an tree structure/hirerachy with nodes as objects.
+	It can manipulate all the objects dynamically.
+
+	When the web page is loaded browser creates the document object model which is an objectal orientation of the HTML page.
+	It intracts with the javascript and document itself for creation of dynamic web pages.
+	It can be used for style and creation new dynamic content.
+	It can manipulate the HTML element objects.
+
+	<h3>document.all</h3>
+	It returns all the html elements in array format.
+	But storing the elemnts in the arrays is similar to that of hirerachy,
+	Ex:array[0] - gives whole HTML Page, a[1] - whole head tag,a[2] - elements of head tag. 
+
+	syntax : document.all</pre>
+		<p id="documentAll"></p>
+	<pre>
+	<h3>document.anchor</h3>
+	It is used to get all the anchor elements in the documents.
+	It returns the value as an array.
+	<h4 calss="in">property --> document.anchor.length</h4> It gives number of anchor elements in the document.
+
+	syntax : document.anchor</pre>
+		<p id="documentAnchor"></p>
+	<pre>
+	<h3>document.open()</h3>
+	It used for creating new page.
+	It creates new page by deleting the content of the old to which the new content is going to writen.
+	It does not return anything.
+
+	syntax : document.open()</pre>
+		<p id="documentOpen"></p>
+	<pre>
+	<h3>document.cookie</h3>
+	It is used to set cookie in the browser when specific condition occurs.
+	Cookie are the txt document created in the local browser by the server. 
+
+	syntax : document.cookie="cokiename=cookieValue;expiryDate"</pre>
+		<p id="documentCookie"></p> 
+	<pre>
+	<h3>docment.location</h3>
+	It returns the location of current working page.
+	Its return type is object.
+	Using this we can get host name,path,protocol being used in this page.
+
+	syntax :	document.location
+			document.location.host
+		  	document.location.path
+			document.location.href
+			document.location.protocol</pre>
+		<p id="documentLocation"></p>
+	<pre>
+	<h3>document.body</h3>
+	It returns < body> of the current document if no present returns null.
+	This is editable changing the content to this would remove all the content of the body.
+
+	document.body.onfocus=function(){document.body.innerHTML="ARAVIND";}
+	
+	syntax : document.body</pre>
+		<p id="documentbody"></p>
+	<pre>
+	<h3>document.head</h3>
+	It returns < head> of the current document.
+	This is editable changing the content to this would remove all the content of the previous head. 
+
+	syntax : document.head</pre>
+		<p id="documentHead"></p>
+	<pre>
+	<h3>document.styleSheets</h3>
+	It returns external link of < styleSheets> of the current document.
+	It returns as object.
+
+	syntax : document.styleSheets</pre>
+		<p id="documentStyle"></p>
+	<pre>
+	<h3>document.scripts</h3>
+	It returns external link of < body> of the current document .
+	It returns as array of HTMLCollecetions.
+
+	syntax : document.scripts</pre>
+		<p id="documentScript"></p>
+	<pre>
+	<h3>document.lastModified</h3>
+	It gives the date and time of the documnet's last modification.
+
+	syntax : document.lastModified</pre>
+		<p id="documentLastModified"></p>
+	<pre>
+	<h3>document.readyState</h3>
+	It gives whether the pages is loaded completly or not.
+	It gives to values completly or interactive or loading.
+
+	syntax : document.readyState</pre>
+		<p id="documentReady"></p>
+<script type="text/javascript">
+	displayAllElements();
+</script>
+</body>
+</html>

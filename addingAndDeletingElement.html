@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Adding and Deleting HTML Element</title>
+	<script type="text/javascript" src="addingAndDeletingElement.js"></script>
+	<link rel="stylesheet" type="text/css" href="addingAndDeletingElement.css">
+</head>
+<body>
+	<h1>Adding and Deleting HTML Elements</h1>
+	<pre>
+		document.createElement(element);  -->  Creates new HTML element.
+		document.removeChild(element);	  -->  Removes an HTML element.
+		document.appendChild(element);	  -->  Adds an HTML Element.
+		document.replaceChild(element);	  -->  Replace an HTML element.
+		document.write(text);
+
+	<h3>Creating Element :</h3>
+		Creating a button using document.createElement(element).
+		It  creates new element and we can add it where ever necessary.
+		First using document.createElement() create an for the required tag.
+		Then add Attributes for the  created Element.
+		For adding contents to the created node, create a text Node and write some contents to it.
+		Then append the textNode to it.
+
+	<input type="button" value="Click Here to Create New Button" onclick="functionCreateElement()" /></pre>
+	<p class="note">Note : After clicking the button check the end of the page. It is added there.</p>
+
+	<pre>
+	<h3>Appending Element :</h3>
+		Appending means adding an new node to the existing node.
+		It adds it at last of the existing node.
+		document.body.append(element).
+			->It adds it at the end of the body element.
+
+	<h3>Replacing an Element :</h3>
+		Replacing an Element instead of an other element.
+		If given element doesn't exist error occurs.
+		Same like deleting should perform this operation from it's parent node.
+	
+	<h3>Deleting Element :</h3>
+		 Using Delete element we can delete elements one by one.
+		 First select the node/tag/id/class using any css selectors.
+		 Similar to tree, if you want to delete a node you can delete only from parent node.
+		 From parent check whether it has existing child nodes and continue deleting by using index position.
+	 Consider a list :</pre>
+	 <input type="button" value="Click Here for Appending the List" onclick="functionAppendElement()" />
+	 <input type="button" value="Click Here for Deleting the List" onclick="functionDeleteElement()" /> 
+	 <input type="button" value="Click Here for Replace the List" onclick="functionReplaceElement()" />
+	 <pre><ul id="list"><li>Input</li><li>Button</li><li>Tags</li><li>Output</li><li>Script</li><li>Style</li><li>HTML</li></ul> 
+
+    <h3>document.write()</h3>
+        documnet.write() is used to write a content in the HTML document.
+        It mostly used for testing.
+        It should used after all HTML element or it would delete it.
+	</pre>
+</body>
+</html>
