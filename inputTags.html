@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Input Tags</title>
+	<style type="text/css">
+		h3{
+			text-align:center;
+
+		}
+		pre{
+			display: none;
+		}
+	</style>
+	<script type="text/javascript">
+		function displayfunction(){
+			document.getElementById('html').innerHTML="<h1>HI, HELLO</h1>"
+			document.getElementById('text').innerText="<h1>HI, HELLO</h1>"
+			document.getElementById('value').value="<h1>HI, HELLO</h1>"
+			document.getElementById('htmlarea').innerHTML="<h1>HI, HELLO</h1>"
+			document.getElementById('areatext').innerText="<h1>HI, HELLO</h1>"
+			document.getElementById('valuearea').value="<h1>HI, HELLO</h1>"
+			document.getElementById("contentinput").style.display='block';
+			document.getElementById("contentarea").style.display='block';
+
+		}
+		
+	</script>
+</head>
+<body>
+	<h3>innerHTML and innerText in input Tags.</h3>
+	<label>Displaying Input Text box for innerHTML : </label>
+	<input id="html" type="text"><br><br>
+	<label>Displaying Input Text box for innerText : </label>
+	<input id="text" type="text"><br><br>
+	<label>Displaying Input Text box for value : </label>
+	<input id="value" type="text"><br><br>
+	<pre id="contentinput">
+		Using innerHTML and innerText content cannot be added into the input elements.
+		It can be added using only value.
+		Ex:
+			document.getElementById('idName').value = "some content";
+		The value assigned will show same as that of text.
+	</pre>
+	<label>Displaying Input Text box for innerHTML : </label>
+	<textarea id="htmlarea" type="text"></textarea><br><br>
+	<label>Displaying Input Text box for innerText : </label>
+	<textarea id="areatext" type="text"></textarea><br><br>
+	<label>Displaying Input Text box for value : </label>
+	<textarea id="valuearea" type="text"></textarea><br><br>
+	<pre id="contentarea">
+		Using innerHTML and innerText content can be added into the inputarea elements on reload.But Cannot add content after editing.
+		It can be added using only value.
+		Ex:
+			document.getElementById('idName').value = "some content";
+		The value assigned will show same as that of text.
+	</pre>
+	<input type="button" name="dispalybutton"  value="click the button for displaying the content." onclick="displayfunction()" />
+</body>
+</html>

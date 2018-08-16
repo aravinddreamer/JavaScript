@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Z index</title>
+	<link rel="stylesheet" type="text/css" href="zindex.css">
+	<script type="text/javascript" src="zindex.js"></script>
+</head>
+<body>
+	<h1>Z-Index</h1>
+	<pre>
+	Z-index property always determines the stack order of an element.
+	Same as that of stack, elements with higher index always becomes front.
+
+	For defining z-index property for an element it should have position property.
+	--> Relative, Absolute, fixed.
+
+	Property values of z-index are: 
+		-->number -- number value/index position of the stack,
+		   initial -- , auto, inherit
+</pre>
+	<div id="container" style="position:absolute">
+		<div id="myBox">myBox</div>
+		<div id="z0">z-index 0</div>
+		<div id="z1">z-index 1</div>
+		<div id="z2">z-index 2</div>
+		<div id="z3">z-index 3</div>
+	</div>
+	<div>
+		<input type="button" name="increase" onclick="increaseindex()" value="Click to increase the Z-Index"/><br><br>
+		<input type="button" name="decrease" onclick="decreaseindex()" value="Click to decrease the Z-Index"/><br><br>
+		<input type="button" name="auto" onclick="setauto()" value="Click to set Auto"/><br><br>
+		<input type="button" name="initail" onclick="setinitial()" value="Click to set Initial"/><br><br>
+	</div>
+</body>
+</html>

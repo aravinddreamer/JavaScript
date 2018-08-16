@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Selecting of First child.</title>
+	<link rel="stylesheet" type="text/css" href="firstchild.css">
+	<script type="text/javascript" src="firstchild.js"></script>
+</head>
+<body>
+
+<h1>First child of the specific parent.</h1>
+
+<button class="listbtn" onclick="listView()">List View</button>
+<button class="gridbtn active" onclick="gridView()">Grid View</button><br><br>
+<div class="container">
+	<div class="innerDiv">
+			<div class="box">
+
+				<span>GETTING FIRST CHILD OF THE PARENT</span><br>
+				<h3>element:firstChild{<br>//css styling...<br>
+				}</h3><br><br>
+				In this property if the given-element is the first child of it's parent then <br>
+				the given css styling property will be auto matically added.
+
+  			</div>
+  			<div class="box" >
+				<span>GETTING LAST CHILD OF THE PARENT</span><br>
+				<h3>element:firstChild{<br>//css styling...<br>
+				}</h3><br>	
+				In this property if the given-element is the last child of it's parent then <br>
+				the given css styling property will be auto matically added.
+			</div>
+			<div class="box" >
+				
+				<span>GETTING CHILD COUNT OF THE PARENT</span><br>
+				<h3>documnet.getElementById("idName").childElementCount.</h3><br><br>
+				In this property it returns the number of child elements for the element <br>
+				whose id is denoted.<br>
+				The childElementCount property will produce the same result as element.children.length.
+
+			</div>
+			<div class="box">
+				<span>GETTING CHILD NODES OF THE PARENT</span><br>
+				<h3>document.element.childNodes.</h3><br><br>
+				In this property it returns as a Nodelist of child Nodes for the given parent element.<br>
+				It appears as sorted order as they are shown in the code.<br>
+				so they can be accessed by using their index values.
+			</div>
+			<div class="box">
+				<span>GETTING CHILDREN NODES OF THE PARENT</span><br>
+				<h3>document.element.children.</h3><br><br>
+				In this property it returns as a collection of child Nodes for the given parent element.<br>
+				It appears as sorted order as they are shown in the code.<br>
+				so they can be accessed by using their index values.<br>
+				<span>Almost, same as childNodes only difference child Nodes returns text and comment lines also but children return only elements.</span>
+			</div>
+			<div class="box">
+				<span>GETTING First Child</span><br>
+				<h3>document.element.firstChild.</h3><br><br>
+				It returns child elment of the given parent as a HTML object. 
+			</div>
+			<div class="box">
+				<span>GETTING First Element Child</span><br>
+				<h3>document.element.firstElementChild.</h3><br><br>
+				It returns child elment of the given parent as a HTML object.<br>
+				<span>Almost, same as first-child only difference first-child Nodes may also returns text and comment lines also but firstElementchildren return only elements.</span> 
+			</div>
+			<div class="box">
+				<span>GETTING Last Child</span><br>
+				<h3>document.element.lastChild.</h3><br><br>
+				It returns last-child element of the given parent as a HTML object. 
+			</div>
+			<div class="box">
+				<span>GETTING Last Element Child</span><br>
+				<h3>document.element.lastElementChild.</h3><br><br>
+				It returns last-child element of the given parent as a HTML object.<br>
+				<span>Almost, same as last-child only difference last-child Nodes may also returns text and comment lines also but lastElementchildren return only elements.</span> 
+			</div>
+			<div class="box">
+				<span>GETTING Next Sibiling</span><br>
+				<h3>document.element.nextSibiling.</h3><br><br>
+				It returns single element who is the next-sibling given element as a HTML object.<br>
+			</div>
+			<div class="box">
+				<span>GETTING Previous Sibiling</span><br>
+				<h3>document.element.npreviousSibiling.</h3><br><br>
+				It returns single element who is the previous-sibling given element as a HTML object based on same order of the code.<br>
+			</div>
+
+	</div>
+</div>
+</body>
+</html>

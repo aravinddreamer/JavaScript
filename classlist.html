@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Class List</title>
+	<link rel="stylesheet" type="text/css" href="classlist.css">
+	<script type="text/javascript" src="classlist.js"></script>
+</head>
+<body>
+<h1>Class List</h1>
+<div id="content">
+		Class List returns the class name of the elements.<br>
+		This property is used to add,remove and toggle CSS classes on the elements.<br>
+		It is a read only property it can be modified by using add and remove methods.<br><br>
+		Multiple class can be given in add method and remove method.<br><br>
+</div><br><br>
+
+<div class='dropdown'>
+	<button class="dropdownbtns">BUTTONS</button>
+		<div class="dropdown-content">
+			<input type="button" name="contentStyler" onclick="contentStyle()" value="Click to Change the Style of the above content." /><br><br>
+			<input type="button" name="contentStyler" onclick="removeStyle()" value="Click to Remove the Style of the above content." /><br><br>
+			<input type="button" name="contentStyler" onclick="toggleStyle()" value="Click to Toggle the Style of the above content." /><br><br>
+			<input type="button" name="contentStyler" onclick="replaceStyle()" value="Click to Replace the Style of the above content." /><br><br>
+		</div>
+
+</div>
+	<pre>
+		<h3>element.add(className[,...])</h3>
+				This property is used to add new css class property to the existing element.
+				Ex:
+				document.getElementById("content").classList.add('contentStyleWhite');
+
+		<h3>element.remove(className[,...])</h3>
+				This property is used to delete the added css class property from the existing element.
+				Ex:
+				document.getElementById("content").classList.toggle('contentStyleBlack');
+
+		<h3>element.toggle(className[)</h3>
+				This property is used to on and off the given style class.
+				Ex:
+				document.getElementById("content").classList.remove('contentStyleWhite');
+
+		<h3>element.replace(className1,className2)</h3>
+				This property is used to replace one class by the another class.
+				Ex:
+				document.getElementById("content").classList.replace('contentStyleBlack','contentStyleWhite');
+
+		<h3>element.contains(className)</h3>
+				This property returns boolean values about the existence of the class.
+				Ex:
+				document.getElementById("content").contains('contentStyleWhite');
+	</pre>
+
+</body>
+</html>

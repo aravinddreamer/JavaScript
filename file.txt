@@ -1,0 +1,20 @@
+How are the local and session storage stored in browser ?
+	
+	Both are client side storage.
+	It is stored in native directory of the web browser.
+	In encrypted format.
+	For different brower different directory.
+	Which stores their current log,old log,history,session storage and local storage in encrypted format.
+	Ex:
+		.ldb
+		.log
+		.localstorage
+		.txt
+		.db
+		.sk -history
+		.plist -property list
+	As http is stateless ,local storage is used.
+	That is when an application is used and closed.
+	It is completely reset.
+	It forces the user to login again once.
+	So that local storage and cookies are used wich stored keys and other infomations.
